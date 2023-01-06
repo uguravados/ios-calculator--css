@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.calc {
+  height: 700px;
+  width: 425px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 50px;
+  border-radius: 40px;
+  font-size: 6px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 35px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 11px;
+  background-color: black;
+  margin-bottom: 25px;
+  border-radius: 100px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 18px; 
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+div.num0 {
+  border-radius: 55px;
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 33px;
+  width: 180px;
+}
+
+div.ac,
+div.box1,
+div.box2 {
+  background-color: #a5a5a5;
+}
+
+div.num0,
+div.num1,
+div.num2,
+div.num3,
+div.num4,
+div.num5,
+div.num6,
+div.num7,
+div.num8,
+div.num9,
+div.box7,
+div.box8 {
+  color: white;
+  background-color: #333333;
+}
+
+div.box3,
+div.box4,
+div.box5,
+div.box6 {
+  color: white;
+  background-color: #f1a33c;
+}
+
+div.box3:hover,
+div.box4:hover,
+div.box5:hover,
+div.box6:hover {
+  cursor: pointer;
+  background-color: #c57b1a;
+}
+
+div.num0:hover,
+div.num1:hover,
+div.num2:hover,
+div.num3:hover,
+div.num4:hover,
+div.num5:hover,
+div.num6:hover,
+div.num7:hover,
+div.num8:hover,
+div.num9:hover,
+div.box7:hover,
+div.box8:hover {
+  cursor: pointer;
+  background-color: #111111;
+}
+
+div.ac:hover,
+div.box1:hover,
+div.box2:hover {
+  background-color: #757575;
+  cursor: pointer;
+}
