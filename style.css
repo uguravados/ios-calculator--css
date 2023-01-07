@@ -7,13 +7,35 @@ body {
   display: flex;
   justify-content: center;
 }
+
+div.display{
+height: 100px;
+  color:white;
+  width: 420px;
+  text-align-last: right;
+font-size: 70px;
+margin-right: 50px;
+}
+
+
+div.result{
+
+color: white;
+height: 100px;
+width: 420px;
+margin-top: 35px;
+text-align-last: right;
+font-size: 70px;
+margin-right: 50px;
+}
 .calc {
   height: 700px;
   width: 425px;
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: flex-end;
+  flex-direction: column;
   margin: 50px;
   border-radius: 40px;
   font-size: 6px;
@@ -21,16 +43,18 @@ body {
   font-size: 35px;
 }
 
-.grid-container {
+.gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 11px;
   background-color: black;
   margin-bottom: 25px;
   border-radius: 100px;
+  justify-content: left;
+  margin-right:25px;
 }
 
-.grid-container > div {
+.gridContainer > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 18px; 
@@ -63,8 +87,8 @@ div.num6,
 div.num7,
 div.num8,
 div.num9,
-div.box7,
-div.box8 {
+div.dot,
+div.equal {
   color: white;
   background-color: #333333;
 }
@@ -72,7 +96,7 @@ div.box8 {
 div.box3,
 div.box4,
 div.box5,
-div.box6 {
+div.plus {
   color: white;
   background-color: #f1a33c;
 }
@@ -80,7 +104,7 @@ div.box6 {
 div.box3:hover,
 div.box4:hover,
 div.box5:hover,
-div.box6:hover {
+div.plus:hover {
   cursor: pointer;
   background-color: #c57b1a;
 }
@@ -95,8 +119,8 @@ div.num6:hover,
 div.num7:hover,
 div.num8:hover,
 div.num9:hover,
-div.box7:hover,
-div.box8:hover {
+div.dot:hover,
+div.equal:hover {
   cursor: pointer;
   background-color: #111111;
 }
